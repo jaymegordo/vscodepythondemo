@@ -14382,9 +14382,9 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://code.visualstudio.com">Visual Studio Code</a> is a lightweight, open-source code editor, designed to be much simpler and more accessible than a full-featured IDE. Don't let "lightweight" deter you, or make you think for even a second this application can't do absolutely anything and everythig you'd ever need to do!</p>
-<p>I've used VS Code daily for the past three years, starting with very little programming knowledge (we don't count VBA right?), and have since progressed to building and mantaining a <em>very important</em> application used internally at my company by several hundred people. I'm frequent visitor to the trenches of their GitHub Issues, and have figured out how to make VS Code do everything I need to do with good-ol-fashioned hundreds of hours of googling + trial and error.</p>
-<p>In this post I'll aim to take you from little or zero VS Code experience all the way to my highly biased opinions of the best/most efficient way to do things.</p>
+<p><a href="https://code.visualstudio.com">Visual Studio Code</a> is a lightweight, open-source code editor, designed to be much simpler and more accessible than a full-featured IDE. Don't let "lightweight" deter you, or make you think this application can't do absolutely anything and everything you'd ever need with python!</p>
+<p>I've used VS Code daily for the past three years, starting with very little programming knowledge (we don't count VBA right?), and have since progressed to building and maintaining a <em>tremendously important</em> application used by several hundred people. I'm a frequent visitor to the trenches of their GitHub Issues, and have figured out how to make VS Code do everything I need to do with good-ol-fashioned hundreds of hours of googling + trial and error.</p>
+<p>In this post I'll aim to take you from little or zero VS Code experience all the way to my highly biased opinions of the best and most efficient way to do things.</p>
 
 </div>
 </div>
@@ -14399,7 +14399,7 @@ a.anchor-link {
 </ul>
 </li>
 </ul>
-<p>Make sure you have these main applications insstalled, installing python/git with package managers like homebrew is fine.</p>
+<p>Make sure you have these main applications installed, installing python/git with package managers like homebrew is fine.</p>
 <h3 id="VS-Code-Extensions">VS Code Extensions<a class="anchor-link" href="#VS-Code-Extensions">&#182;</a></h3><ul>
 <li>Probably want<ul>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a></li>
@@ -14465,12 +14465,12 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>These are some of the areas of the window I'm focused on most frequently:</p>
 <ul>
-<li><strong>File Explorer</strong> - When your project is opened as a "workspace", this sets vscode's workspace root folder and displays all files/subfolders.<ul>
+<li><strong>File Explorer</strong> - When your project is opened as a "workspace", this sets vs code's workspace root folder and displays all files/subfolders.<ul>
 <li><code>File &gt; Open &gt; select a folder to open</code></li>
 </ul>
 </li>
-<li><strong>Git</strong> - (Or source control) - this pane manages all your git releted actions.</li>
-<li><strong>Extensions</strong> - Install new vscode extensions.</li>
+<li><strong>Git</strong> - (Or source control) - this pane manages all your git related actions.</li>
+<li><strong>Extensions</strong> - Install new vs code extensions.</li>
 <li><strong>Active Python Interpreter</strong> - Tells you which python environment is active. This can be changed with <code>command palette &gt; select interpreter</code></li>
 <li><strong>Code Editor</strong> - A view which displays the active text/code file. Could be python, text, markdown etc.</li>
 <li><strong>Terminal Window</strong> - Can display one or more terminals, as well as other output information from running extensions (eg git, jupyter, python etc).</li>
@@ -14481,7 +14481,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Workflow">Workflow<a class="anchor-link" href="#Workflow">&#182;</a></h2><p>Now lets talk about some general workflow actions. Using these commands can vastly speed up your vscode experience.</p>
+<h2 id="Workflow">Workflow<a class="anchor-link" href="#Workflow">&#182;</a></h2><p>Now let's talk about some general workflow actions. Using these commands can vastly speed up your vs code experience.</p>
 <h3 id="Command-Palette">Command Palette<a class="anchor-link" href="#Command-Palette">&#182;</a></h3><p>The command palette is your main launchpad for almost any action, and can be activated with <code>cmd + shift + p</code>. Then start typing the name of any action or setting (chances are it will show up at the top within a few characters) and press enter. I use the command palette <em>very</em> frequently, likely 10-20 times per hour.</p>
 <p><img src="./images/command_palette.png" width="600" style="display: block; margin-left: auto; margin-right: auto;"/></p>
 <h3 id="File-Launcher">File Launcher<a class="anchor-link" href="#File-Launcher">&#182;</a></h3><p>The file launcher is similar to the command palette, (its actually the exact same, but launched without the leading "&gt;"). This is the fastest way to jump to any of your files (open or closed), and can be launched with <code>cmd + p</code>. Start typing the name of a file and press enter to open.</p>
@@ -14493,10 +14493,10 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Jupyter-Interactive-Window">Jupyter Interactive Window<a class="anchor-link" href="#Jupyter-Interactive-Window">&#182;</a></h2><p>Now, as promised, we'll talk about (in my opinion) the most important yet least obvious and most overlooked feature of vscode when developing in python - the Jupyter Interactive Window.</p>
+<h2 id="Jupyter-Interactive-Window">Jupyter Interactive Window<a class="anchor-link" href="#Jupyter-Interactive-Window">&#182;</a></h2><p>Now, as promised, we'll talk about (in my opinion) the most important yet least obvious and most overlooked feature of vs code when developing in python - the Jupyter Interactive Window.</p>
 <p>It's hard to overstate the value of the interactive window. Combined with the fact that vs code doesn't open in a browser (gross), this feature is what makes vs code so fast/easy/painless to do everything from testing out a couple lines of code, to building complete applications.</p>
 <p>The interactive window is a <a href="https://en.wikipedia.org/wiki/Read–eval–print_loop">REPL</a> environment, and runs a standard Jupyter kernel under the hood. You can set it to use any of your conda or pipenv environments (highly recommend), or just let it use your base python installation.</p>
-<h3 id="Settings">Settings<a class="anchor-link" href="#Settings">&#182;</a></h3><p>More settings! To help the interactive window achieve it's full potetential, we'll add a few things to <code>settings.json</code>:</p>
+<h3 id="Settings">Settings<a class="anchor-link" href="#Settings">&#182;</a></h3><p>More settings! To help the interactive window achieve it's full potential, we'll add a few things to <code>settings.json</code>:</p>
 <div class="highlight"><pre><span></span><span class="nt">&quot;files.autoSave&quot;</span><span class="p">:</span> <span class="s2">&quot;onFocusChange&quot;</span><span class="p">,</span>
     <span class="nt">&quot;jupyter.notebookFileRoot&quot;</span><span class="p">:</span> <span class="s2">&quot;${workspaceFolder}&quot;</span><span class="p">,</span>
     <span class="nt">&quot;jupyter.runStartupCommands&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -14506,11 +14506,11 @@ a.anchor-link {
     <span class="p">],</span>
 </pre></div>
 <ul>
-<li><code>onFocusChange</code> tells vscode to save any file editor as soon as your cursor moves out of the frame.</li>
+<li><code>onFocusChange</code> tells vs code to save any file editor as soon as your cursor moves out of the frame.</li>
 <li><code>notebookFileRoot</code> sets jupyter to set its cwd to your workspace root folder, which is important so we can access our files/packages easily.</li>
 <li><code>runStartupCommands</code> tells jupyter to reload your files whenever they change on disk, which lets us quickly edit files and test them out in the interactive window.</li>
 </ul>
-<h3 id="Usage">Usage<a class="anchor-link" href="#Usage">&#182;</a></h3><p>Now you should be able to lauch an interactive window, and import your modules/functions.</p>
+<h3 id="Usage">Usage<a class="anchor-link" href="#Usage">&#182;</a></h3><p>Now you should be able to launch an interactive window, and import your modules/functions.</p>
 <p>With a directory structure like:</p>
 
 <pre><code>RootFolder
@@ -14529,7 +14529,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Conslusion">Conslusion<a class="anchor-link" href="#Conslusion">&#182;</a></h2><p>This was a very brief introduction to vs code with python and the jupyter interactive window. Hopefully it has given you enough of an example to get started playing with python or moving into more structured package development, all in vs code!</p>
+<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>This was a very brief introduction to vs code with python and the jupyter interactive window. Hopefully it has given you enough of an example to get started playing with python or moving into more structured package development, all in vs code!</p>
 
 </div>
 </div>
